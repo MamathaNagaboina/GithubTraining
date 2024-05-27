@@ -15,7 +15,7 @@ jobs:
       - name: docker installation 
         run: curl -fsSL https://get.docker.com | sh 
       - name: docker login 
-        run: docker login -u ${{secrets.MAMATHA_1}} -p ${{secrets.DOCKERHUBPASSWORD}}
+        run: docker login -u ${{secrets.MAMATHA_1}} -p ${{secrets.PASSWORD}}
       - name: docker build 
         run: cd testenv && docker build . -t fast_api:satyam
       - name: test
