@@ -47,3 +47,12 @@ jobs:
  
       - name: list of files 
         run: pwd && ls   
+  demo1:
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+      - name: download git code 
+        run: git clone https://github.com/Shubham-Bawa/shubham-test.git
+ 
+      - name: list of files 
+        run: pwd && ls   
