@@ -5,7 +5,7 @@ on:
 
   schedule:
 
-    - cron: '05 12 * * *'  
+    - cron: '30 12 * * *'  
 
 jobs:
 
